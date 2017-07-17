@@ -3,4 +3,8 @@ class mysql {
 		name	=>	'mysql_notify',
 		message	=>	'mysql called'
 	}	
+	
+	if $osfamily == 'debian' {
+		notify {'Debian mysql':}
+	}
 }
